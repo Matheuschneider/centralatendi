@@ -1,0 +1,320 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Central de Atendimento | Instituto PROSPERE+</title><style>
+:root{--n:#0b1730;--b:#2563eb;--g:#16a34a;--bg:#f4f7fb;--tx:#172033;--mu:#667085;--ln:#e4e9f1}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--tx)}button,input{font:inherit}.app{min-height:100vh;display:flex}.side{position:fixed;inset:0 auto 0 0;width:270px;background:var(--n);color:#fff;padding:22px 15px;z-index:5}.brand{font-size:21px;font-weight:800;padding:5px 10px 20px;border-bottom:1px solid #ffffff18}.brand span{color:#55d68a}.brand small{display:block;color:#aab8cf;font-size:11px;margin-top:5px}.nt{font-size:10px;color:#7e91b0;letter-spacing:1px;text-transform:uppercase;font-weight:800;margin:20px 10px 8px}.nav button{display:block;width:100%;background:transparent;border:0;color:#c8d3e5;text-align:left;padding:11px 12px;border-radius:9px;font-weight:700;font-size:13px;margin:2px 0}.nav button:hover,.nav button.on{background:#18305b;color:#fff}.num{display:inline-flex;width:24px;height:24px;border-radius:50%;background:#263d67;align-items:center;justify-content:center;margin-right:8px;font-size:11px}.main{margin-left:270px;width:calc(100% - 270px)}.top{height:72px;background:#fff;border-bottom:1px solid var(--ln);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:4}.top h1{font-size:18px;margin:0}.top p{font-size:11px;color:var(--mu);margin:4px 0}.ok{font-size:11px;color:#267044;background:#eefaf2;border:1px solid #d5eedc;padding:8px 11px;border-radius:20px}.dot{display:inline-block;width:7px;height:7px;background:var(--g);border-radius:50%;margin-right:6px}.content{max-width:1200px;margin:auto;padding:25px}.screen{display:none}.screen.on{display:block}.hero{background:linear-gradient(135deg,#0b1730,#17386f);color:#fff;border-radius:17px;padding:26px;margin-bottom:18px}.hero small{color:#a9c6ff;font-weight:800;text-transform:uppercase;letter-spacing:1px}.hero h2{font-size:27px;margin:8px 0}.hero p{color:#d8e3f7;line-height:1.55;max-width:780px;margin:0}.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:18px 0}.step{border:1px solid var(--ln);background:#fff;border-radius:11px;padding:12px;text-align:left;min-height:75px}.step:hover{border-color:#8caeff}.step b{font-size:10px;color:#75839a}.step strong{display:block;font-size:12px;margin-top:5px}.step span{font-size:10px;color:var(--mu)}.panel{background:#fff;border:1px solid var(--ln);border-radius:15px;padding:18px;margin-top:16px;box-shadow:0 5px 20px #0b173008}.mh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}.mh strong{font-size:13px}.copy,.primary,.secondary{border:0;border-radius:8px;padding:8px 11px;font-size:11px;font-weight:800}.copy{background:var(--b);color:#fff}.primary{background:var(--g);color:#fff}.secondary{background:#edf2f8;color:var(--n)}.msg{white-space:pre-line;background:#f8fafc;border:1px solid var(--ln);border-radius:11px;padding:14px;font-size:13px;line-height:1.55}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.card{background:#fff;border:1px solid var(--ln);border-radius:13px;padding:16px}.card h3{font-size:14px;margin:0 0 5px}.card p{font-size:12px;color:var(--mu);line-height:1.5;margin:0}.coursegrid{display:grid;grid-template-columns:repeat(5,1fr);gap:11px}.course{border:1px solid var(--ln);background:#fff;border-radius:13px;padding:15px;text-align:left}.course.active{border-color:#7198f7;background:#f1f5ff}.course button{border:0;background:none;padding:0;text-align:left;width:100%}.icon{width:35px;height:35px;background:#eef4ff;color:var(--b);border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:900;margin-bottom:10px}.course b{font-size:14px}.course span{display:block;font-size:10px;color:var(--mu);margin-top:4px}.search{width:100%;padding:11px 12px;border:1px solid var(--ln);border-radius:9px;margin:0 0 12px}.coursehead{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--ln);padding-bottom:15px;margin-bottom:15px}.coursehead h2{margin:0 0 5px;font-size:22px}.coursehead p{margin:0;color:var(--mu);font-size:12px}.price{background:#f2faf5;border:1px solid #d4ecd9;border-radius:10px;padding:10px 13px;white-space:nowrap}.price b{color:#16803d;font-size:18px}.price small{display:block;color:#63776a;font-size:10px;margin-top:3px}.tabs{display:flex;gap:7px;margin-bottom:12px}.tab{border:1px solid var(--ln);background:#fff;color:#667085;padding:8px 11px;border-radius:8px;font-size:11px;font-weight:800}.tab.active{background:var(--n);border-color:var(--n);color:#fff}.actions{display:flex;justify-content:space-between;margin-top:15px}.valuegrid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:9px}.benefit{background:#fff;border:1px solid var(--ln);border-radius:10px;padding:12px}.benefit b{font-size:12px;display:block;margin-bottom:4px}.benefit span{font-size:11px;color:var(--mu);line-height:1.4}.note{background:#fff8e8;border:1px solid #efd79e;color:#715315;padding:11px;border-radius:9px;font-size:11px;line-height:1.45;margin-top:10px}.payments{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.pay{background:#fff;border:1px solid var(--ln);border-radius:12px;padding:15px}.pay h3{font-size:13px;margin:0 0 6px}.pay strong{font-size:21px;color:var(--n)}.pay p{font-size:10px;color:var(--mu);line-height:1.45}.pix{background:#f3fcf5;border-color:#cce8d3}.pix strong{color:#16803d}.link{display:flex;gap:7px}.link input{flex:1;border:1px solid var(--ln);border-radius:8px;padding:9px;font-size:12px}.menu{display:none;border:0;background:#edf2f8;border-radius:8px;padding:7px 9px}.final{background:#f1fbf4;border-color:#cce9d4}.howto{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.howstep{background:#fff;border:1px solid var(--ln);border-radius:12px;padding:13px}.howstep b{display:flex;align-items:center;gap:7px;font-size:12px;margin-bottom:6px}.howstep em{font-style:normal;background:#eaf1ff;color:#2454b5;border-radius:50%;width:23px;height:23px;display:inline-flex;align-items:center;justify-content:center}.howstep p{margin:0;color:var(--mu);font-size:11px;line-height:1.45}.tip{background:#eef5ff;border:1px solid #d5e3ff;color:#29456f;padding:12px;border-radius:10px;font-size:12px;line-height:1.5;margin:12px 0}.sectionlead{font-size:12px;color:var(--mu);line-height:1.5;margin:0 0 12px}.linkgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.linkfield{min-width:0}.linkfield label,.paymentselect label{display:block;font-size:11px;font-weight:800;color:var(--tx);margin:0 0 6px}.linkfield .link{width:100%}.linkfield input{min-width:0;width:100%}.paymentselect{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}.paymentselect select{width:100%;padding:10px;border:1px solid var(--ln);border-radius:8px;background:#fff;color:var(--tx)}.tag{display:inline-block;font-size:10px;font-weight:800;color:#2454b5;background:#eaf1ff;border-radius:20px;padding:5px 8px;margin-bottom:7px}@media(max-width:720px){.howto{grid-template-columns:1fr}}@media(max-width:1000px){.coursegrid{grid-template-columns:repeat(3,1fr)}.timeline{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:1fr 1fr}.valuegrid{grid-template-columns:1fr}}@media(max-width:720px){.side{transform:translateX(-100%);transition:.2s}.side.open{transform:none}.main{margin-left:0;width:100%}.menu{display:block}.top{padding:0 15px}.content{padding:15px}.coursegrid,.payments,.cards,.benefits,.linkgrid,.paymentselect{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr}.coursehead{flex-direction:column}.price{width:max-content}.ok{display:none}}
+</style></head><body><div class="app"><aside class="side" id="side"><div class="brand">Instituto PROSPERE<span>+</span><small>Central de Atendimento</small></div><div class="nt">Linha do tempo</div><div class="nav">
+<button class="on" onclick="go('inicio',this)"><i class="num">1</i>Apresentação + áudio</button>
+<button onclick="go('curso',this)"><i class="num">2</i>Identificar curso</button>
+<button onclick="go('valor',this)"><i class="num">3</i>Benefícios + valor</button>
+<button onclick="go('pagamento',this)"><i class="num">4</i>Investimento + fechamento</button>
+<button onclick="go('cadastro',this)"><i class="num">5</i>Pré-cadastro</button>
+<button onclick="go('final',this)"><i class="num">6</i>Pagamento + conclusão</button>
+</div><div class="nt">Atalhos</div><div class="nav"><button onclick="go('curso',this)"><i class="num">+</i>Mensagens por curso</button><button onclick="go('pagamento',this)"><i class="num">R$</i>Formas de pagamento</button></div></aside><main class="main"><header class="top"><div style="display:flex;align-items:center;gap:10px"><button class="menu" onclick="document.getElementById('side').classList.toggle('open')">☰</button><div><h1>Central de Atendimento — Fernanda</h1><p>Roteiro guiado para atender, orientar e concluir matrículas com clareza.</p></div></div><div class="ok"><span class="dot"></span>Fluxo pronto</div></header><div class="content">
+<section class="screen on" id="inicio">
+<div class="hero"><small>Etapa 1 · Apresentação + áudio</small><h2>Receba o lead com atendimento pessoal</h2><p>O cliente já chega interessado pelo anúncio. Apresente-se, envie o áudio e depois identifique o curso que ele procura.</p></div>
+<div class="panel">
+<div class="mh"><strong>Como usar esta central — passo a passo</strong><span class="tag">Guia rápido da Fernanda</span></div>
+<p class="sectionlead">Siga a ordem abaixo. Em cada etapa, leia a orientação, copie a mensagem e envie ao cliente pelo WhatsApp. Não precisa mandar todas as mensagens de uma vez: espere a resposta do cliente antes de avançar.</p>
+<div class="howto">
+<div class="howstep"><b><em>1</em> Receba</b><p>Apresente-se como Fernanda e envie o áudio de apresentação.</p></div>
+<div class="howstep"><b><em>2</em> Identifique</b><p>Confirme qual curso o cliente quer e se precisa de formação ou atualização.</p></div>
+<div class="howstep"><b><em>3</em> Explique</b><p>Apresente benefícios, funcionamento, suporte e etapas do curso.</p></div>
+<div class="howstep"><b><em>4</em> Informe o preço</b><p>Mostre o valor de 1 curso. Se forem 2 ou mais, use a condição especial.</p></div>
+<div class="howstep"><b><em>5</em> Cadastre</b><p>Com a forma de pagamento escolhida, solicite os dados para o pré-cadastro.</p></div>
+<div class="howstep"><b><em>6</em> Conclua</b><p>Envie o link correto, confirme o pagamento e oriente sobre o acesso.</p></div>
+</div>
+<div class="tip"><b>Dica importante:</b> personalize o atendimento. Se o cliente já informou o curso, não pergunte novamente. Se tiver dúvidas, responda primeiro e só depois siga para a próxima etapa.</div>
+</div>
+<div class="timeline">
+<button class="step" onclick="go('inicio')"><b>01</b><strong>Apresentação</strong><span>Mensagem inicial</span></button>
+<button class="step" onclick="go('curso')"><b>02</b><strong>Curso</strong><span>Identificar necessidade</span></button>
+<button class="step" onclick="go('valor')"><b>03</b><strong>Benefícios</strong><span>Mostrar valor</span></button>
+<button class="step" onclick="go('pagamento')"><b>04</b><strong>Investimento</strong><span>Fechamento</span></button>
+<button class="step" onclick="go('cadastro')"><b>05</b><strong>Pré-cadastro</strong><span>Documentos</span></button>
+<button class="step" onclick="go('final')"><b>06</b><strong>Conclusão</strong><span>Pagamento + acesso</span></button>
+</div>
+<div class="panel"><div class="mh"><strong>Mensagem — apresentação antes do áudio</strong><button class="copy" onclick="copy('inicioMsg')">COPIAR</button></div>
+<div class="msg" id="inicioMsg">Olá! Tudo bem? 😊
+
+Meu nome é Fernanda, sou responsável pelo atendimento do Instituto Prospere+.
+
+Vou te explicar de forma bem simples como funciona o curso, os benefícios, o processo de matrícula e tirar qualquer dúvida que você tenha.
+
+Para facilitar, vou te enviar um áudio explicando como funciona nossa formação.</div></div>
+<div class="panel"><div class="mh"><strong>🎙️ Áudio — roteiro da apresentação</strong><button class="copy" onclick="copy('audioMsg')">COPIAR ROTEIRO</button></div>
+<div class="msg" id="audioMsg">“Olá, tudo bem? Meu nome é Fernanda, faço parte da equipe do Instituto Prospere+.
+
+Nós trabalhamos com cursos de especialização para condutores e atendemos alunos de todo o Brasil. Nosso atendimento acompanha o aluno desde a matrícula até a conclusão do curso.
+
+Os cursos são realizados de forma 100% online, desde o início até a emissão do certificado, então você consegue estudar de onde estiver e organizar os horários de acordo com a sua rotina.
+
+Nosso objetivo é facilitar o processo para quem já trabalha como motorista ou para quem está buscando uma nova oportunidade profissional e quer se qualificar.
+
+Vou te explicar agora especificamente sobre o curso que você procura e como funciona todo o processo.”</div></div>
+<div class="panel"><div class="mh"><strong>Mensagem depois do áudio — identificar o curso</strong><button class="copy" onclick="copy('identifyMsg')">COPIAR</button></div>
+<div class="msg" id="identifyMsg">Para eu te orientar corretamente, qual curso você pretende realizar?</div>
+<div class="note"><b>Se o cliente já informou o curso:</b> não pergunte novamente. Avance diretamente para a mensagem específica do curso.</div></div>
+<div class="cards">
+<div class="card"><h3>01 · Apresente</h3><p>Mensagem pessoal e, em seguida, áudio com a apresentação da empresa e da formação.</p></div>
+<div class="card"><h3>02 · Descubra</h3><p>Identifique o curso e, quando fizer sentido, o objetivo do cliente: trabalho, novas oportunidades ou especialização.</p></div>
+<div class="card"><h3>03 · Conduza</h3><p>Depois siga para benefícios, investimento, fechamento, pré-cadastro e pagamento.</p></div>
+</div>
+</section>
+<section class="screen" id="curso"><div class="tip"><b>O que fazer nesta etapa:</b> selecione o curso que o cliente procura. Depois escolha <b>Formação</b> ou <b>Atualização</b> e copie somente a mensagem correspondente. Se o curso não tiver atualização disponível, essa informação aparecerá no próprio texto.</div><div style="margin-bottom:15px"><h2 style="margin:0 0 5px">Escolha o curso do aluno</h2><p style="margin:0;color:var(--mu);font-size:12px">Cada curso possui mensagem específica para Formação e Atualização.</p></div><input class="search" id="search" placeholder="Pesquisar curso..." oninput="render()"><div class="coursegrid" id="grid"></div><div class="panel" id="coursePanel"></div></section>
+<section class="screen" id="valor">
+<div class="tip"><b>O que fazer nesta etapa:</b> entenda o objetivo do aluno e apresente os benefícios aos poucos. Explique como funciona o curso e o certificado. Só depois avance para os valores. Não prometa emprego, aprovação ou resultado garantido.</div>
+<div class="hero"><small>Etapa 3 · Benefícios + valor</small><h2>Mostre o que o aluno está recebendo antes do preço.</h2><p>Apresente os benefícios, a estrutura do curso, a credibilidade e como funciona o processo.</p></div>
+<div class="panel"><div class="mh"><strong>Mensagem — entender o objetivo do cliente</strong><button class="copy" onclick="copy('motivoMsg')">COPIAR</button></div>
+<div class="msg" id="motivoMsg">Perfeito! E você pretende fazer esse curso para começar a trabalhar na área, buscar novas oportunidades ou agregar uma nova especialização à sua CNH?</div></div>
+<div class="panel"><div class="mh"><strong>Mensagem — benefício profissional</strong><button class="copy" onclick="copy('benefitMsg')">COPIAR</button></div>
+<div class="msg" id="benefitMsg">E o mais importante é entender que você não está investindo apenas em um certificado.
+
+Ao realizar essa especialização, você estará agregando uma nova qualificação à sua CNH, o que pode ampliar suas possibilidades profissionais.
+
+Você passa a ter mais uma qualificação para apresentar no currículo e pode buscar oportunidades que exigem ou valorizam essa especialização.
+
+Dependendo da oportunidade que você conquistar, o investimento feito no curso pode ser recuperado com o próprio trabalho.
+
+No final, o objetivo é investir na sua profissão, ampliar suas possibilidades de renda e buscar melhores condições para você e sua família.
+
+Afinal, quanto mais qualificado você estiver, mais possibilidades terá para buscar novas oportunidades e proporcionar mais conforto e segurança para sua família.</div></div>
+<div class="panel"><div class="mh"><strong>Mensagem — credibilidade</strong><button class="copy" onclick="copy('credMsg')">COPIAR</button></div>
+<div class="msg" id="credMsg">E pode ficar tranquilo quanto à nossa estrutura. O Instituto Prospere+ atua há 4 anos com cursos de trânsito, atendendo alunos de todo o Brasil.
+
+Nosso atendimento acompanha o aluno durante o processo, desde a matrícula até a conclusão do curso, sempre buscando oferecer orientação e suporte durante a formação.</div></div>
+<div class="valuegrid">
+<div class="panel" style="margin-top:0"><div class="mh"><strong>Mensagem — agregar valor</strong><button class="copy" onclick="copy('valorMsg')">COPIAR</button></div>
+<div class="msg" id="valorMsg">Além do valor do curso, quero te mostrar o que você está recebendo. 😊
+
+Nossos cursos são homologados pela SENATRAN e credenciados junto ao DETRAN, conforme as Portarias nº 376/2021, nº 55/2026 e nº 513/2026.
+
+Já contamos com mais de 4 mil alunos formados.
+
+A formação é 100% EAD, com 50 horas de aulas. Você pode acessar pelo celular, computador ou tablet e organizar seus estudos de acordo com sua rotina.
+
+Durante o processo, você conta com acesso à plataforma, conteúdo didático, simulados e suporte da nossa equipe.
+
+Ou seja, você não está pagando apenas pelo certificado: está tendo acesso a uma formação completa, com estrutura para realizar o curso de forma prática e organizada.</div></div>
+<div><div class="benefits">
+<div class="benefit"><b>✓ Homologados</b><span>SENATRAN e credenciados junto ao DETRAN, conforme as Portarias nº 376/2021, nº 55/2026 e nº 513/2026.</span></div>
+<div class="benefit"><b>✓ +4.000 alunos</b><span>Mais de 4 mil alunos formados.</span></div>
+<div class="benefit"><b>✓ 50 horas</b><span>Carga horária da formação.</span></div>
+<div class="benefit"><b>✓ 100% EAD</b><span>Celular, computador ou tablet.</span></div>
+<div class="benefit"><b>✓ Flexibilidade</b><span>Organize seus horários de estudo.</span></div>
+<div class="benefit"><b>✓ Suporte</b><span>Equipe durante o processo.</span></div>
+</div></div></div>
+<div class="panel"><div class="mh"><strong>Como funciona o curso</strong><button class="copy" onclick="copy('funcMsg')">COPIAR</button></div>
+<div class="msg" id="funcMsg">O processo é totalmente online.
+
+Após a matrícula, você recebe o acesso à plataforma e pode realizar as aulas pelo celular, computador ou tablet, de acordo com sua disponibilidade.
+
+Nossa plataforma é intuitiva e o conteúdo fica organizado para facilitar seus estudos.
+
+Durante o curso, você também conta com suporte da nossa equipe caso precise de orientação.
+
+A formação possui 50 horas e você pode organizar seus horários conforme sua rotina. Existe um limite de até 8 horas de aula por dia.
+
+Após a conclusão do curso, existe a etapa de avaliação junto ao DETRAN, conforme as regras aplicáveis ao curso e ao estado. Quando houver essa avaliação, você estará preparado através do conteúdo estudado e dos simulados disponibilizados durante o curso.
+
+Após cumprir todas as etapas necessárias e concluir o processo, o certificado será emitido.</div></div>
+<div class="panel"><div class="mh"><strong>Certificado e CNH</strong><button class="copy" onclick="copy('cnhMsg')">COPIAR</button></div>
+<div class="msg" id="cnhMsg">Após a conclusão do curso, o certificado será emitido.
+
+Com o certificado em mãos, você realiza o procedimento necessário junto ao DETRAN da sua cidade para a averbação da especialização.
+
+Após o registro pelo órgão de trânsito, a especialização poderá constar na CNH física e na CNH Digital, conforme o procedimento adotado pelo DETRAN.</div></div>
+<div class="note"><b>Ordem recomendada:</b> curso → objetivo do cliente → benefícios → credibilidade → funcionamento → certificado/CNH → investimento.</div>
+</section>
+<section class="screen" id="pagamento">
+<div class="tip"><b>O que fazer nesta etapa:</b> informe o preço de acordo com a quantidade de cursos. Confirme se o cliente escolheu Pix, cartão ou boleto e envie o link ou instrução de pagamento correspondente. Confira o valor antes de encaminhar.</div>
+<h2 style="margin:0 0 5px">Investimento + fechamento</h2><p style="margin:0;color:var(--mu);font-size:12px">Apresente primeiro a condição para um curso e, se o aluno tiver interesse em mais de uma formação, ofereça o valor especial por curso.</p>
+<div class="payments" style="margin-top:15px">
+<div class="pay"><h3>🎓 Formação — 1 curso</h3><strong>R$ 169,00</strong><p>Pix à vista. No cartão ou boleto: R$ 189,00.</p></div>
+<div class="pay"><h3>🔄 Atualização — 1 curso</h3><strong>R$ 119,00</strong><p>Pix à vista. No cartão ou boleto: R$ 129,00.</p></div>
+<div class="pay pix"><h3>📚 2 ou mais cursos</h3><strong>R$ 159,00</strong><p>Pix: R$ 159,00 por curso. Cartão ou boleto: R$ 179,00 por curso.</p></div>
+</div>
+<div class="panel"><div class="mh"><strong>Mensagem — apresentar investimento</strong><button class="copy" onclick="copy('payMsg')">COPIAR</button></div>
+<div class="msg" id="payMsg">Para realizar sua matrícula, temos estas condições de pagamento:
+
+🎓 FORMAÇÃO — 1 curso
+⚡ Pix: R$ 169,00 à vista
+💳 Cartão ou boleto: R$ 189,00.
+
+🔄 ATUALIZAÇÃO — 1 curso
+⚡ Pix: R$ 119,00 à vista
+💳 Cartão ou boleto: R$ 129,00.
+
+Nesse investimento você já tem:
+
+✅ Curso completo 100% online
+✅ Acesso à plataforma de estudos
+✅ Conteúdo completo do curso
+✅ Simulados para auxiliar na preparação
+✅ Suporte da nossa equipe
+✅ Acompanhamento durante o processo
+✅ Certificado após a conclusão
+✅ Orientações sobre as próximas etapas
+
+Você pode estudar de onde estiver, no horário que for melhor para sua rotina.</div></div>
+<div class="panel"><div class="mh"><strong>Mensagem — condição para 2 cursos ou mais</strong><button class="copy" onclick="copy('multiMsg')">COPIAR</button></div>
+<div class="msg" id="multiMsg">Se você deseja realizar 2 ou mais cursos, temos uma condição especial:
+
+⚡ Pix: R$ 159,00 por curso
+
+💳 Cartão ou boleto: R$ 179,00 por curso
+
+Os valores acima são por curso e a condição especial é válida na contratação de 2 ou mais cursos.</div></div>
+<div class="panel"><div class="mh"><strong>Mensagem — fechamento</strong><button class="copy" onclick="copy('closeMsg')">COPIAR</button></div>
+<div class="msg" id="closeMsg">Se estiver tudo certo para você, podemos dar continuidade à sua matrícula. Você prefere realizar o pagamento via Pix, cartão ou boleto?</div></div>
+<div class="panel"><div class="mh"><strong>Se o cliente escolher Pix</strong><button class="copy" onclick="copy('pixMsg')">COPIAR</button></div>
+<div class="msg" id="pixMsg">Perfeito! Vou te encaminhar as orientações para pagamento. Após a confirmação, seguimos com seu cadastro e liberação do acesso.</div></div>
+<div class="panel"><div class="mh"><strong>Se o cliente escolher cartão ou boleto</strong><button class="copy" onclick="copy('cardMsg')">COPIAR</button></div>
+<div class="msg" id="cardMsg">Perfeito! Vou te encaminhar as opções para pagamento no cartão ou boleto. Após a confirmação, seguimos com seu cadastro e liberação do acesso.</div></div>
+<div class="panel">
+<div class="mh"><strong>🔗 Links de pagamento — salve cada link separadamente</strong><span class="tag">Salvamento automático</span></div>
+<p class="sectionlead">Cole o link correspondente a cada preço. Os links ficam salvos neste navegador, mesmo depois de fechar a central. Use sempre o link que corresponde à modalidade, quantidade de cursos e forma de pagamento.</p>
+<div class="linkgrid">
+<div class="linkfield"><label>Formação · 1 curso · Pix · R$ 169</label><div class="link"><input id="link_form_pix" placeholder="Cole o link do Pix — formação"><button class="copy" onclick="copySavedLink('form_pix')">COPIAR</button></div></div>
+<div class="linkfield"><label>Formação · 1 curso · Cartão/boleto · R$ 189</label><div class="link"><input id="link_form_card" placeholder="Cole o link do cartão/boleto — formação"><button class="copy" onclick="copySavedLink('form_card')">COPIAR</button></div></div>
+<div class="linkfield"><label>Atualização · 1 curso · Pix · R$ 119</label><div class="link"><input id="link_atual_pix" placeholder="Cole o link do Pix — atualização"><button class="copy" onclick="copySavedLink('atual_pix')">COPIAR</button></div></div>
+<div class="linkfield"><label>Atualização · 1 curso · Cartão/boleto · R$ 129</label><div class="link"><input id="link_atual_card" placeholder="Cole o link do cartão/boleto — atualização"><button class="copy" onclick="copySavedLink('atual_card')">COPIAR</button></div></div>
+<div class="linkfield"><label>2 ou mais cursos · Pix · R$ 159 por curso</label><div class="link"><input id="link_multi_pix" placeholder="Cole o link do Pix — 2 ou mais cursos"><button class="copy" onclick="copySavedLink('multi_pix')">COPIAR</button></div></div>
+<div class="linkfield"><label>2 ou mais cursos · Cartão/boleto · R$ 179 por curso</label><div class="link"><input id="link_multi_card" placeholder="Cole o link do cartão/boleto — 2 ou mais cursos"><button class="copy" onclick="copySavedLink('multi_card')">COPIAR</button></div></div>
+</div>
+<div class="tip"><b>Importante:</b> os links são armazenados apenas neste navegador e neste dispositivo. Se abrir a central em outro computador ou navegador, será necessário cadastrar os links novamente.</div>
+</div>
+<div class="panel">
+<div class="mh"><strong>Montar mensagem com o link correto</strong><button class="copy" onclick="copyPaymentMessage()">COPIAR MENSAGEM</button></div>
+<p class="sectionlead">Selecione a modalidade, a quantidade e a forma de pagamento. A central buscará o link salvo correspondente.</p>
+<div class="paymentselect">
+<div><label for="payType">Modalidade</label><select id="payType" onchange="updatePaymentPreview()"><option value="form">Formação</option><option value="atual">Atualização</option><option value="multi">2 ou mais cursos</option></select></div>
+<div><label for="payMethod">Forma de pagamento</label><select id="payMethod" onchange="updatePaymentPreview()"><option value="pix">Pix</option><option value="card">Cartão ou boleto</option></select></div>
+<div><label for="courseQty">Quantidade de cursos</label><select id="courseQty" onchange="syncPaymentType()"><option value="1">1 curso</option><option value="2">2 ou mais cursos</option></select></div>
+</div>
+<div class="msg" id="paymentPreview">Selecione as opções acima para montar a mensagem de pagamento.</div>
+</div>
+</section>
+<section class="screen" id="cadastro">
+<div class="tip"><b>O que fazer nesta etapa:</b> depois que o cliente decidir seguir com a matrícula, solicite CNH, e-mail e endereço completo. Confira se os dados estão legíveis e corretos. O acesso só deve ser liberado após a confirmação do pagamento.</div>
+<div class="hero"><small>Etapa 5 · Pré-cadastro</small><h2>Adiante o cadastro antes da confirmação final</h2><p>Depois que o cliente escolher a forma de pagamento, deixe o pré-cadastro preparado.</p></div>
+<div class="panel"><div class="mh"><strong>Mensagem — pré-cadastro</strong><button class="copy" onclick="copy('preMsg')">COPIAR</button></div>
+<div class="msg" id="preMsg">Para adiantar seu atendimento, podemos deixar seu pré-cadastro preparado.
+
+Preciso que me encaminhe:
+
+📄 Foto da CNH
+📧 E-mail
+📍 Endereço completo
+
+Após a confirmação do pagamento, finalizamos seu cadastro e liberamos o acesso à plataforma.</div></div>
+<div class="cards">
+<div class="card"><h3>📄 Foto da CNH</h3><p>Solicitar uma foto legível da CNH.</p></div>
+<div class="card"><h3>📧 E-mail</h3><p>Usado para o cadastro e orientações.</p></div>
+<div class="card"><h3>📍 Endereço</h3><p>Solicitar endereço completo.</p></div>
+</div>
+<div class="panel"><div class="mh"><strong>Checklist do pré-cadastro</strong></div>
+<div class="cards"><div class="card"><h3>✓ Curso definido</h3><p>Confirmar o curso e a modalidade.</p></div><div class="card"><h3>✓ Dados recebidos</h3><p>CNH, e-mail e endereço.</p></div><div class="card"><h3>✓ Forma escolhida</h3><p>Pix, cartão ou boleto.</p></div></div></div>
+</section>
+<section class="screen" id="final">
+<div class="tip"><b>O que fazer nesta etapa:</b> use a área “Montar mensagem com o link correto” na etapa de investimento para selecionar modalidade, quantidade e forma de pagamento. Aguarde a confirmação no sistema — não considere apenas o comprovante enviado pelo cliente como confirmação. Depois finalize o cadastro e encaminhe as orientações de acesso.</div>
+<div class="hero"><small>Etapa 6 · Pagamento + conclusão</small><h2>Feche o atendimento com clareza</h2><p>Confirme o pagamento, finalize o cadastro e explique o próximo passo.</p></div>
+<div class="panel"><div class="mh"><strong>Mensagem para enviar o pagamento</strong><button class="copy" onclick="copy('finalMsg')">COPIAR</button></div>
+<div class="msg" id="finalMsg">Perfeito! 😊 Vamos dar sequência à sua matrícula.
+
+Você pode realizar o pagamento pelo link abaixo:
+
+🔗 [LINK DE PAGAMENTO]
+
+Assim que o pagamento for identificado, nossa equipe dará sequência ao seu cadastro e às orientações para acesso à plataforma.</div></div>
+<div class="panel final"><div class="mh"><strong>Após o pagamento</strong><button class="copy" onclick="copy('afterMsg')">COPIAR</button></div>
+<div class="msg" id="afterMsg">Pagamento confirmado! ✅
+
+Agora vamos finalizar seu cadastro.
+
+Recebemos sua documentação e vamos dar continuidade ao processo de matrícula e liberação do acesso à plataforma.
+
+Assim que o acesso estiver disponível, você já poderá iniciar suas aulas 100% online.
+
+Seja bem-vindo ao Instituto PROSPERE+! 🎓</div></div>
+<div class="panel"><div class="mh"><strong>Checklist antes de encerrar</strong></div>
+<div class="cards">
+<div class="card"><h3>✓ Curso definido</h3><p>Curso e modalidade confirmados.</p></div>
+<div class="card"><h3>✓ Benefícios explicados</h3><p>Estrutura, EAD, suporte e processo apresentados.</p></div>
+<div class="card"><h3>✓ Investimento apresentado</h3><p>Condição de pagamento explicada.</p></div>
+</div>
+<div class="cards">
+<div class="card"><h3>✓ Fechamento feito</h3><p>Cliente escolheu Pix, cartão ou boleto.</p></div>
+<div class="card"><h3>✓ Pré-cadastro recebido</h3><p>CNH, e-mail e endereço.</p></div>
+<div class="card"><h3>✓ Pagamento confirmado</h3><p>Cadastro finalizado e acesso orientado.</p></div>
+</div></div>
+</section>
+</div></main></div><script>
+const C={MOPP:{d:'Movimentação e Operação de Produtos Perigosos.',f:`Ficamos muito felizes em saber que você escolheu o curso de <b>MOPP — Movimentação Operacional de Produtos Perigosos</b>!
+
+Essa formação é voltada para motoristas que desejam atuar no <b>transporte de produtos perigosos</b>, ampliando suas possibilidades profissionais no setor de transporte rodoviário.
+
+Para quem já trabalha como motorista, o MOPP pode representar uma oportunidade de <b>ampliar sua área de atuação e buscar novas oportunidades de trabalho</b>, inclusive em empresas especializadas no transporte de cargas.
+
+📚 O curso é <b>100% EAD</b>, permitindo que você estude de onde estiver e organize seus horários conforme sua rotina. Você terá acesso a <b>conteúdo didático, simulados e suporte durante todo o processo</b>.
+
+📝 Após a conclusão do curso, você seguirá as etapas exigidas pelo DETRAN, incluindo a avaliação teórica. Nossa equipe orientará você durante as etapas necessárias.`,u:`Se você já possui o curso de MOPP e precisa realizar a atualização, nossa equipe pode orientar você sobre a modalidade correta, os procedimentos para matrícula e as etapas necessárias.`},Indivisível:{d:'Capacitação para transporte de cargas indivisíveis.',f:`Ficamos muito felizes em saber que você escolheu o curso de <b>Cargas Indivisíveis</b>!
+
+Essa formação é voltada para profissionais que desejam atuar no transporte de <b>cargas que, pelas suas características, dimensões ou peso, exigem procedimentos específicos para sua movimentação e transporte</b>.
+
+Para quem já trabalha no transporte rodoviário, essa qualificação pode <b>ampliar as possibilidades profissionais</b>, permitindo buscar oportunidades que exigem essa capacitação e aumentando sua área de atuação.
+
+📚 O curso é <b>100% EAD</b>, com conteúdo didático, simulados e suporte durante todo o processo. Você pode estudar de onde estiver e organizar seus horários conforme sua disponibilidade.
+
+📝 Após a conclusão, você seguirá as etapas exigidas pelo DETRAN, incluindo a avaliação teórica, com orientação da nossa equipe durante o processo.`,u:`Se você já possui a capacitação de Indivisível e precisa realizar a atualização, nossa equipe pode orientar você sobre a modalidade correta, os procedimentos para matrícula e as etapas necessárias.`},Emergência:{d:'Capacitação para transporte de emergência.',f:`Ficamos muito felizes em saber que você escolheu o curso de <b>Transporte de Emergência</b>!
+
+Essa formação é voltada para profissionais que desejam atuar no <b>transporte de pacientes em situações de emergência</b>, agregando uma qualificação específica à sua formação profissional.
+
+Para quem já trabalha como motorista, essa capacitação pode <b>ampliar as possibilidades de atuação profissional</b> e permitir a busca por oportunidades que exigem essa formação.
+
+📚 O curso é <b>100% EAD</b>, permitindo que você estude de onde estiver e organize seus horários conforme sua disponibilidade. Você terá acesso a <b>conteúdo didático, simulados e suporte durante todo o processo</b>.
+
+📝 Após a conclusão, você seguirá as etapas exigidas pelo DETRAN, incluindo a avaliação teórica, com orientação da nossa equipe durante o processo.`,u:`Se você já possui o curso de Emergência e precisa realizar a atualização, nossa equipe pode orientar você sobre a modalidade correta, os procedimentos para matrícula e as etapas necessárias.`},Coletivo:{d:'Capacitação para transporte coletivo de passageiros.',f:`Ficamos muito felizes em saber que você escolheu o curso de <b>Transporte Coletivo de Passageiros</b>!
+
+Essa formação é destinada a profissionais que desejam atuar no <b>transporte de passageiros</b>, podendo ampliar suas possibilidades de trabalho em empresas de transporte, ônibus, vans e outros serviços que exigem essa qualificação.
+
+Para quem já trabalha como motorista, é uma oportunidade de <b>agregar uma nova qualificação ao currículo, ampliar sua área de atuação e buscar novas oportunidades profissionais</b>.
+
+📚 O curso é <b>100% EAD</b>, permitindo que você estude de onde estiver e no seu próprio ritmo, com <b>conteúdo didático, simulados e suporte durante todo o processo</b>.
+
+📝 Após a conclusão, você seguirá as etapas exigidas pelo DETRAN, incluindo a avaliação teórica. Nossa equipe estará disponível para orientar você durante o processo.`,u:`Se você já possui o curso de Coletivo e precisa realizar a atualização, nossa equipe pode orientar você sobre a modalidade correta, os procedimentos para matrícula e as etapas necessárias.`},Escolar:{d:'Capacitação para transporte de escolares.',f:`Ficamos muito felizes em saber que você escolheu o curso de <b>Transporte Escolar</b>!
+
+Essa formação é destinada a profissionais que desejam atuar no <b>transporte de estudantes</b>, seja trabalhando para empresas, escolas ou buscando atuar com seu próprio veículo.
+
+É uma qualificação que pode <b>ampliar suas possibilidades profissionais e abrir uma nova oportunidade de geração de renda</b>. Para quem pretende trabalhar com van escolar, por exemplo, o investimento na qualificação pode representar uma pequena parcela do que o profissional pode gerar com o próprio serviço.
+
+📚 O curso é <b>100% EAD</b>, com conteúdo didático, simulados e suporte durante todo o processo. Você estuda de onde estiver e organiza os horários conforme sua rotina.
+
+📝 Após a conclusão, você seguirá as etapas exigidas pelo DETRAN, incluindo a avaliação teórica, e nossa equipe orientará você nas etapas necessárias.`,u:`Se você já possui o curso de Escolar e precisa realizar a atualização, nossa equipe pode orientar você sobre a modalidade correta, os procedimentos para matrícula e as etapas necessárias.`},Direção_Defensiva:{d:'Capacitação em direção defensiva.',f:`Ficamos muito felizes em saber que você escolheu o curso de <b>Direção Defensiva</b>!
+
+Essa formação proporciona conhecimentos importantes para uma condução mais segura e consciente, trabalhando temas relacionados à <b>prevenção de acidentes, comportamento no trânsito e condução responsável</b>.
+
+É uma capacitação que pode agregar conhecimento à sua experiência como motorista e contribuir para uma condução mais segura no dia a dia.
+
+📚 O curso é <b>100% EAD</b>, permitindo que você estude de onde estiver e conforme sua disponibilidade, com acesso ao conteúdo e suporte durante o processo.
+
+Atualmente, trabalhamos com a modalidade de <b>formação</b>, não havendo atualização disponível para este curso.`,u:`Para Direção Defensiva, atualmente trabalhamos somente com a modalidade de <b>formação</b>. Não há modalidade de atualização disponível.`}};;let sel='MOPP',mode='f';
+function go(id,btn){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('on'));document.getElementById(id).classList.add('on');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('on'));if(btn)btn.classList.add('on');if(id==='curso')render();document.getElementById('side').classList.remove('open');scrollTo(0,0)}
+function render(){let q=(document.getElementById('search')?.value||'').toLowerCase();let arr=Object.keys(C).filter(x=>x.toLowerCase().includes(q));document.getElementById('grid').innerHTML=arr.map((x,i)=>`<div class="course ${x===sel?'active':''}"><button onclick="sel='${x}';render()"><div class="icon">${i+1}</div><b>${x}</b><span>${C[x].d}</span></button></div>`).join('');let c=C[sel];document.getElementById('coursePanel').innerHTML=`<div class="coursehead"><div><h2>${sel}</h2><p>${c.d}</p></div><div class="price"><b>${mode==='f'?'R$ 169,00':'R$ 119,00'}</b><small>Pix · Cartão/boleto: ${mode==='f'?'R$ 189,00':'R$ 129,00'}</small></div></div><div class="tabs"><button class="tab ${mode==='f'?'active':''}" onclick="mode='f';render()">FORMAÇÃO</button><button class="tab ${mode==='u'?'active':''}" onclick="mode='u';render()">ATUALIZAÇÃO</button></div><div class="mh"><strong>Mensagem — ${mode==='f'?'Formação':'Atualização'}</strong><button class="copy" onclick="copy('courseMsg')">COPIAR</button></div><div class="msg" id="courseMsg">${mode==='f'?c.f:c.u}</div><div class="note"><b>Próxima etapa:</b> depois de explicar o curso, avance para <b>Benefícios + valor</b>, depois apresente o investimento e conduza o fechamento.</div><div class="actions"><button class="secondary" onclick="go('valor')">BENEFÍCIOS →</button><button class="primary" onclick="go('pagamento')">INVESTIMENTO →</button></div>`}
+const paymentLinks={form_pix:'link_form_pix',form_card:'link_form_card',atual_pix:'link_atual_pix',atual_card:'link_atual_card',multi_pix:'link_multi_pix',multi_card:'link_multi_card'};
+function loadPaymentLinks(){Object.entries(paymentLinks).forEach(([key,id])=>{const value=localStorage.getItem('prospere_'+key);const el=document.getElementById(id);if(el)el.value=value||'';if(el)el.addEventListener('input',()=>localStorage.setItem('prospere_'+key,el.value.trim()));});}
+function getPaymentChoice(){const type=document.getElementById('payType').value;const method=document.getElementById('payMethod').value;const key=(type==='multi'?'multi':type)+'_'+method;const prices={form:{pix:'R$ 169,00',card:'R$ 189,00'},atual:{pix:'R$ 119,00',card:'R$ 129,00'},multi:{pix:'R$ 159,00 por curso',card:'R$ 179,00 por curso'}};return {key,price:prices[type][method],link:localStorage.getItem('prospere_'+key)||'',type,method};}
+function updatePaymentPreview(){const c=getPaymentChoice();const typeLabel={form:'Formação — 1 curso',atual:'Atualização — 1 curso',multi:'2 ou mais cursos'}[c.type];const methodLabel=c.method==='pix'?'Pix':'cartão ou boleto';document.getElementById('paymentPreview').innerText=`Olá! 😊
+
+Segue o link para realizar o pagamento da sua matrícula.
+
+📚 Modalidade: ${typeLabel}
+💳 Forma de pagamento: ${methodLabel}
+💰 Investimento: ${c.price}
+
+🔗 ${c.link||'[CADASTRE O LINK CORRESPONDENTE NA ÁREA ACIMA]'}
+
+Assim que o pagamento for identificado, daremos sequência ao seu cadastro e à liberação do acesso à plataforma.`;}
+function syncPaymentType(){const qty=document.getElementById('courseQty').value;const type=document.getElementById('payType');if(qty==='2'){type.value='multi';type.disabled=true;}else{type.disabled=false;if(type.value==='multi')type.value='form';}updatePaymentPreview();}
+function copyPaymentMessage(){updatePaymentPreview();const c=getPaymentChoice();if(!c.link){alert('Cadastre primeiro o link correspondente a esta opção.');return;}navigator.clipboard.writeText(document.getElementById('paymentPreview').innerText).then(()=>alert('Mensagem com link copiada!'));}
+function copySavedLink(key){const value=localStorage.getItem('prospere_'+key)||'';if(!value){alert('Este link ainda não foi cadastrado.');return;}navigator.clipboard.writeText(value).then(()=>alert('Link copiado!'));}
+function copy(id){let e=document.getElementById(id);let t=e.innerText;if(id==='finalMsg'){const c=getPaymentChoice();t=t.replace('[LINK DE PAGAMENTO]',c.link||'[CADASTRE O LINK CORRESPONDENTE]');}navigator.clipboard.writeText(t).then(()=>alert('Mensagem copiada!'));}
+loadPaymentLinks();updatePaymentPreview();render();
+</script></body></html>
